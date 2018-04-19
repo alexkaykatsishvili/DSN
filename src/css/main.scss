@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400&subset=cyrillic');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+.header {
+    background-color: #1a5f74;
+
+    .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+        height: 56px;
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    .search {
+        max-width: 840px;
+        input {
+            width: 100%;
+        }
+    }
+    .right {
+        div {
+            display: inline-block;
+        }
+    }
+    }
+    
+}
+
+.background {
+    height: 497px;
+    background: url(../images/background.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -220px;
+    .accordion {
+        border-radius: 1px;
+        width: 751px;
+        height: 334px;
+        margin-right: 16px;
+        .title {
+        	background: transparent;
+        	color: white;
+        	padding: 0 0 48px 54px;
+        	.flex {
+        		display: flex;
+        	align-items: center;
+        	h1 {
+        		margin: 0;
+        		padding: 0;
+        		display: inline;
+        		padding-left: 22px;
+        	}
+        	}
+        	p {
+        		padding-left: 54px;
+        	}
+        }
+        
+        .card {
+            margin-bottom: 20px;
+            -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+            &-header {
+                height: 110px;
+                padding-left: 50px;
+                display: flex;
+                align-items: center;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 30px;
+                background-color: white;
+				border: none;
+                button {
+                    color: #000;
+                    text-decoration: none;
+                }
+            }
+            &-body {
+            	div {
+            	line-height: 24px;
+                text-align: left;
+                max-width: 620px;
+                padding: 0 0 70px 80px;
+            	}
+                
+                border-bottom: 1px solid #dfdfdf;
+                
+            }
+        }
+    }
+    .course {
+        	background: transparent;
+        	color: white;
+        	padding: 0 0 41px 0px;
+        }
+}
+
+.slide-custome {
+    position: relative;
+    background-color: white;
+    border-radius: 1px;
+    width: 240px;
+    height: 420px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    .logo {
+        background-color: white;
+        position: absolute;
+        height: 84px;
+        width: 84px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 23px;
+        top: -18px;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    }
+    .star {
+        position: absolute;
+        right: 24px;
+        top: 14px;
+    }
+    .group {
+        img {
+            padding-top: 52px;
+        }
+    }
+    .school {
+        display: flex;
+        align-items: flex-start;
+        padding: 23px 0 0 23px;
+        img,
+        p {
+            display: inline-block;
+            margin: 0;
+        }
+        p {
+            font-size: 18px;
+            line-height: 25px;
+            text-align: left;
+            padding-left: 14px;
+        }
+    }
+    .description {
+        padding: 16px 0 0 23px;
+        p {
+            font-weight: 300;
+            line-height: 21px;
+            /* Приближение из-за подстановки шрифтов */
+            text-align: left;
+        }
+    }
+    .address {
+        display: flex;
+        align-items: flex-start;
+        padding: 0px 0 0 23px;
+        img,
+        p {
+            display: inline-block;
+            margin: 0;
+        }
+        img {
+            margin-left: 5px;
+        }
+        p {
+            font-weight: 300;
+            line-height: 23px;
+            text-align: left;
+            padding-left: 16px;
+        }
+    }
+}
+
+.slider {
+	margin-top: 65px;
+	margin-bottom: 200px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    background: black;
+}
+.carousel-control-prev {
+	left: -100px;
+}
+.carousel-control-next {
+	right: -100px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.sidebar {
+		display: none;
+	}
+}
+.wrapper {
+	display: flex;
+	flex-dirrection: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.pad {
+	height: 64px;
+	width: 64px;
+	background: red;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    padding: 20px;
+   }
